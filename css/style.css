@@ -24,3 +24,56 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/*Introductions */
+.introduction{
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+h3:nth-child(2) {
+    animation-delay:2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  /* Projects */
+  .container {
+      display:flex;
+      flex-wrap:wrap;
+
+  }
+  .proj{
+      flex: 0 0 calc(50% - 20px);
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-sizing:border-box;
+    
+  }
