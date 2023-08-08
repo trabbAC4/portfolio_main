@@ -2,7 +2,7 @@ nav {
     color: white;
 }
 body {
-    /* background-image: url('/images/wallpaper1.jpg'); */
+    background-image: url('/images/samurai_wallpaper.jpg'); 
     color: white;
 }
 
@@ -54,7 +54,7 @@ body {
 
 /*Introductions */
 .introduction{
-    font-size: 500px;
+    font-size: auto;
     padding-left: 75px;
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 5s;
@@ -104,10 +104,16 @@ h3:nth-child(2) {
 
   }
 
+  .all_display {
+      padding-left: 20px;
+      display: inline-flex;
 
+  }
 
-  #title_front {
-      color: orange;
+  .icons {
+     text-align: center;
+     padding: 20px;
+     font-size: 20px;
   }
 
   /* Projects */
