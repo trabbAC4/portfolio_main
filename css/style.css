@@ -1,32 +1,61 @@
 nav {
-    background-color: #228cc3;
+    color: white;
 }
-
 body {
-    background-color: #aeb4ee;
+    /* background-image: url('/images/wallpaper1.jpg'); */
+    color: white;
 }
 
-#welcome{
+#welcome {
     text-align:center;
-
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 70px;
 }
+#animate-name {
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 40px;
+  padding-left: 75px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 /* Navbar */
 #navigation_bar {
     overflow: hidden;
-    background-color: #333;
 }
 #navigation_bar a {
     float:right;
     padding: 15px;
-}
-a {
-    text-decoration: none;
-    color: white;
+    font-size: 20px;
+    color: black;
 }
 
 /*Introductions */
 .introduction{
+    font-size: 500px;
+    padding-left: 75px;
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -63,6 +92,24 @@ h3:nth-child(2) {
   }
 
 
+  /* Skills */ 
+
+  #skills {
+      padding-top: 105px;
+      padding-left: 45px;
+  }
+
+  #skills_title {
+      text-align: center;
+
+  }
+
+
+
+  #title_front {
+      color: orange;
+  }
+
   /* Projects */
   .container {
       display:flex;
@@ -76,4 +123,40 @@ h3:nth-child(2) {
       border: 1px solid #ccc;
       box-sizing:border-box;
     
+  }
+
+   /* Certifications */
+
+
+
+    /* Footer */
+#footer_logo {
+    text-align: center;
+}
+#credentials a {
+    float: center; 
+    margin-left: 285px;
+    text-decoration: none;
+}
+.creds {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+  /* Backgrounds for each section*/
+  #whoamI {
+
+ 
+    
+
+
+  }
+
+
+  #footer {
+      background-color:grey;
   }
