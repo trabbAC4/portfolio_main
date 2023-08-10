@@ -21,11 +21,11 @@ body {
     text-align:center;
     text-align: left;
     padding-top: 50px;
-    margin-left: 70px;
+
 }
 #animate-name {
     text-transform: uppercase;
-  background-image: linear-gradient(
+    background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
@@ -42,7 +42,6 @@ body {
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 40px;
-  padding-left: 75px;
 }
 
 @keyframes textclip {
@@ -103,7 +102,10 @@ h3:nth-child(2) {
     100% { opacity: 1; }
   }
 
-
+  .Arrangement > *{
+      float: left;
+      padding: 15px;
+  }
   /*Learn more button */ 
   a{
       text-decoration: none;
@@ -308,8 +310,19 @@ h3:nth-child(2) {
 
   /* Contact */ 
 
+#title_contact {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+#message {
+    height: 200px;
+}
+
 .container1 {
     display: inline-flex;
+    text-align: center;
 
 }
 .row1{
@@ -341,5 +354,10 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+#arrangement_of_icons > *{
+    padding: 15px;
+    justify-content: space-between;
+
+}
 
 

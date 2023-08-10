@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href= "/css/style.css"> 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/541b3e6f71.js" crossorigin="anonymous"></script>
+
+    <script src= "/javascript/main.js"></script>
+
 </head> 
 <body>
     <section id ="nav"> 
         <a href= "main.html" id = "logo"> TR </a>
         <nav id= "navigation_bar">
             <a href= "contact.html"> Contact</a>  
-            <a href= "#projects"> Projects</a> 
-            <a href= "#skills">Skills</a>
-            <a href = "#whoamI">About me</a>
+            <a href= "main.html"> Projects</a> 
+            <a href= "main.html">Skills</a>
+            <a href = "main.html">About me</a>
     
             <!--Logo -->
             <!--About me -->
@@ -25,20 +30,33 @@
         </section>
     
     <section id = "contact me">
+    <h1 id = "title_contact"> Let's talk! </h1>
     <div class = "container1"> 
         <div class = "row1">
             <h1> While I am in my professional career, I would love to gather and discuss opportunities that suits me. Feel free to message me and I'm looking forward to speaking</h1>
+            <h1> I am always looking for new opportunities and would love to work with bright minded people on devising solutions to real world problems</h1>
+            <div id= "arrangement_of_icons"> 
+            <a href= "https://github.com/trabbAC4" target=_blank> 
+                <i class="fa-brands fa-github fa-beat fa-2xl" style="color: #3369c7;"></i>
+            </a>
+            <a href= "https://www.linkedin.com/in/tahmidur-rabb-13b187145/" target=_blank> 
+                <i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #0049c7;"></i>
+            </a>
+            <a href= "/pdf/Tahmidur_Rabb_Resume(swe).pdf" target=_blank> 
+            <i class="fa-sharp fa-solid fa-file-pdf fa-beat fa-2xl" style="color: #8898b4;"></i>
+            </a>
+            </div>
         </div>
         <div class = "row"> 
             <div id= "form"> 
-                <form action="/action_page.php">
-                <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                <form action="https://formsubmit.co/235ff43343f43ebeadc7aa9c05649ed1" method="POST">
+                <input type="text" id="fname" name="firstname" placeholder="Full Name" required>
       
-                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="email" name="email" placeholder="Email" required>
     
-                <input type="text" id="message" name="message" placeholder="message"> 
+                <input type="text" id="message" name="message" placeholder="message" required> 
                 <br> 
-                <input type="submit" value="submit"> 
+                    <input type="submit" value="submit"> 
             </form>
             </div> 
         </div>
@@ -52,7 +70,7 @@
             <div id = "credentials">
                 <a href= "https://www.linkedin.com/in/tahmidur-rabb-13b187145/" class="creds" target="_blank"> LinkedIn</a>
                 <a href= "https://github.com/trabbAC4" class="creds" target="_blank"> GitHub</a>
-                <a href= "wwww.google.com" class="creds" target="_blank"> Resume </a>
+                <a href= "/pdf/Tahmidur_Rabb_Resume(swe).pdf" class="creds" target="_blank"> Resume </a>
             </div>
         </div>
     </section>
