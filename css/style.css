@@ -1,3 +1,6 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 #logo {
     font-family: Allura, cursive;
     float: left;
@@ -64,7 +67,15 @@ body {
 }
 
 /*Introductions */
+#homeimage {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    float:right;
+}
 .introduction{
+    padding-bottom: 150px;
     font-size: auto;
     padding-left: 75px;
     animation: fadeIn 3s;
