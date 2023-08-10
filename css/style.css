@@ -8,11 +8,12 @@
 }
 
 nav {
-    color: white;
+    color: black;
 }
 body {
-    background-image: url('/images/mountain.jpg'); 
-    color: white;
+    /* background-image: url('/images/mountain.jpg'); */
+    background-color: grey;
+    color: black;
     background-size: contain;
 }
 
@@ -270,6 +271,12 @@ h3:nth-child(2) {
 
 
     /* Footer */
+#footer_edit{
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+}
 #footer_logo {
     text-align: center;
 }
@@ -286,7 +293,6 @@ h3:nth-child(2) {
 
 
 
-
   /* Backgrounds for each section*/
   #whoamI {
 
@@ -297,25 +303,31 @@ h3:nth-child(2) {
   }
 
 
-  #footer {
-      background-color:grey;
-  }
+
 
 
   /* Contact */ 
 
-  input[type=text], select {
-    width: 100%;
+.container1 {
+    display: inline-flex;
+
+}
+.row1{
+    float:left;
+}
+
+input[type=text], select {
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
-  input[type=submit] {
-  width: 100%;
+input[type=submit] {
+  width: 30%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
