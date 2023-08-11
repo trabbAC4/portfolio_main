@@ -1,5 +1,7 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 #logo {
     font-family: Allura, cursive;
@@ -10,15 +12,7 @@ body {
     padding: 15px;
 }
 
-nav {
-    color: black;
-}
-body {
-    /* background-image: url('/images/mountain.jpg'); */
-    background-color: grey;
-    color: black;
-    background-size: contain;
-}
+
 
 #welcome {
     text-align:center;
@@ -30,10 +24,10 @@ body {
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    black 0%,
+    white 29%,
+    gold 67%,
+    silver 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -68,13 +62,17 @@ body {
 
 /*Introductions */
 #homeimage {
-    max-width: 100%;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
+    border-radius: 50%;
+    max-width: 30%;
+    max-height: 25%;
+
     float:right;
 }
+
 .introduction{
+    background: rgb(14,19,13);
+    background: radial-gradient(circle, rgba(14,19,13,1) 12%, rgba(234,235,234,1) 100%);
+    color: white;
     padding-bottom: 150px;
     font-size: auto;
     padding-left: 75px;
@@ -177,12 +175,16 @@ h3:nth-child(2) {
   /* Skills */ 
 
   #skills {
-      padding-top: 105px;
-      padding-left: 45px;
+    background: rgb(187,221,18);
+    background: radial-gradient(circle, rgba(187,221,18,1) 8%, rgba(122,125,121,1) 9%, rgba(34,35,31,1) 21%);
+    padding-top: 150px;
+    padding-left: 45px;
+    color: white;
   }
 
   #skills_title {
       text-align: center;
+      font-size: 50px;
 
   }
 
@@ -199,6 +201,10 @@ h3:nth-child(2) {
   }
 
   /* Projects */
+  #projects {
+    background: rgb(231,19,59);
+    background: radial-gradient(circle, rgba(231,19,59,1) 6%, rgba(14,16,13,1) 17%, rgba(81,84,79,1) 84%);
+  }
   .project {
       margin-bottom: 135px;
   }
@@ -320,6 +326,9 @@ h3:nth-child(2) {
 
 
   /* Contact */ 
+#contact_me {
+    color: white;
+}
 
 #title_contact {
     text-align: center;
