@@ -18,6 +18,7 @@ body {
     text-align:center;
     text-align: left;
     padding-top: 50px;
+    font-size: 70px;
 
 }
 #animate-name {
@@ -38,7 +39,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 40px;
+  font-size: 65px;
 }
 
 @keyframes textclip {
@@ -118,7 +119,8 @@ h3:nth-child(2) {
   /*Learn more button */ 
   a{
       text-decoration: none;
-      color: #BFC0C0;
+      color: black;
+      font-size: 15px;
   }
   .button {
     display: inline-flex;
@@ -126,7 +128,7 @@ h3:nth-child(2) {
     width: 150px;
     border: 2px solid #BFC0C0;
     margin: auto;
-    color: #BFC0C0;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -152,7 +154,7 @@ h3:nth-child(2) {
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: #BFC0C0;
+    background: black;
     position: absolute;
     transition: all .5s ease-Out;
     top: 20px;
@@ -168,7 +170,7 @@ h3:nth-child(2) {
   }
   
   #button-3:hover a {
-    color: #2D3142;
+    color: #d5d7e0;
   }
 
 
@@ -177,7 +179,7 @@ h3:nth-child(2) {
   #skills {
     background: rgb(187,221,18);
     background: radial-gradient(circle, rgba(187,221,18,1) 8%, rgba(122,125,121,1) 9%, rgba(34,35,31,1) 21%);
-    padding-top: 150px;
+    padding-top: 20px;
     padding-left: 45px;
     color: white;
   }
@@ -286,15 +288,23 @@ h3:nth-child(2) {
 
 
    /* Certifications */
-   #certs {
+#certs { 
     background: rgb(161,148,88);
     background: radial-gradient(circle, rgba(161,148,88,1) 7%, rgba(141,152,142,1) 10%, rgba(1,11,5,1) 15%, rgba(1,11,5,1) 21%);
-   }
+}
+#cert_title {
+    text-align: center;
+    font-size: 45px;
+}
 
 
 
 
     /* Footer */
+
+#footer {
+    background-color: grey;
+}
 #footer_edit{
     position: absolute;
     bottom: 0;
@@ -326,7 +336,12 @@ h3:nth-child(2) {
 
   /* Contact */ 
 #contact_me {
+    padding-top: 50px;
     color: white;
+    background: rgb(13,119,43);
+    background: radial-gradient(circle, rgba(13,119,43,1) 0%, rgba(21,106,45,1) 9%, rgba(19,100,110,1) 17%, rgba(17,95,169,1) 27%, rgba(8,20,18,1) 35%);
+    width: 100vw;
+    height: 100vh;
 }
 
 #title_contact {
@@ -403,5 +418,15 @@ input[type=submit]:hover {
         opacity: 1;
         transform: scale(1.2);
     }
+}
+
+
+/* Rocket Design */
+.rocket_container {
+    position: fixed;
+    font-size:50px;
+}
+.rocket {
+    cursor: pointer;
 }
 

@@ -12,7 +12,7 @@ function createStars() {
         star.style.left = `${getRandomPosition(0, container.clientWidth - 50)}px`;
         star.style.top = `${getRandomPosition(0, container.clientHeight - 50)}px`;
         star.innerHTML = "<h1><i class='fa-sharp fa-regular fa-star fa-2xs' style='color: #d9d9d9;'></i></h1>";
-        unlighted = star.innerHTML;
+        const unlighted = star.innerHTML;
 
         star.onclick = function() {
             if (star.innerHTML == unlighted) {
@@ -33,3 +33,7 @@ window.onload = function() {
         element.style.top = getRandomPosition(0, 200) + "px";
 });
 };
+
+
+
+
