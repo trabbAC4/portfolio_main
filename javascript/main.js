@@ -64,12 +64,14 @@ window.onload = function() {
     draggableElements.forEach(element => {
         element.style.left = getRandomPosition(0, 200) + "px";
         element.style.top = getRandomPosition(0, 200) + "px";
-});
+})
+
+
     rocket.addEventListener("mousedown", startDrag);
     rocket.addEventListener("mouseup", stopDrag);
     rocket.addEventListener("mousemove", dragRocket);
+}
 
-};
 
 
 
