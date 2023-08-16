@@ -1,37 +1,37 @@
-const rocket = document.getElementById("rocket");
+//Rocket 
+const rocket = document.getElementById('rocket');
 let isDragging = false;
-let offset = { x: 0, y: 0 };
 
-function main() {
-    rocket.addEventListener("mousedown", startDrag);
-    rocket.addEventListener("mouseup", stopDrag);
-    rocket.addEventListener("mousemove", dragRocket);
+window.onload = function() {
+    rocket.addEventListener('mousedown', (e) => {
+        isDragging = true;
+      
+        // Calculate the offset between the mouse click and the rocket's position
+        const offsetX = e.clientX - rocket.getBoundingClientRect().left;
+        const offsetY = e.clientY - rocket.getBoundingClientRect().top;
+      
+        // Add event listeners for mousemove and mouseup to enable dragging
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+      
+        function onMouseMove(e) {
+          if (!isDragging) return;
+      
+          // Calculate the new rocket position based on the mouse movement
+          const newX = e.clientX - offsetX;
+          const newY = e.clientY - offsetY;
+      
+          // Set the new position
+          rocket.style.left = newX + 'px';
+          rocket.style.top = newY + 'px';
+        }
+      
+        function onMouseUp() {
+          isDragging = false;
+      
+          // Remove the mousemove and mouseup event listeners
+          document.removeEventListener('mousemove', onMouseMove);
+          document.removeEventListener('mouseup', onMouseUp);
+        }
+      });
 }
-
-function startDrag(event) {
-    isDragging = true;
-    offset.x = event.clientX - rocket.getBoundingClientRect().left;
-    offset.y = event.clientY - rocket.getBoundingClientRect().top;
-}
-
-function stopDrag() {
-    isDragging = false;
-}
-
-function dragRocket(event) {
-    if (!isDragging) return;
-
-    const x = event.clientX - offset.x;
-    const y = event.clientY - offset.y;
-
-    const container = document.querySelector(".rocket_container");
-    const maxX = container.clientWidth - rocket.clientWidth;
-    const maxY = container.clientHeight - rocket.clientHeight;
-
-    const clampedX = Math.min(Math.max(x, 0), maxX);
-    const clampedY = Math.min(Math.max(y, 0), maxY);
-
-    rocket.style.left = clampedX + "px";
-    rocket.style.top = clampedY + "px";
-}
-window.onload = main();
