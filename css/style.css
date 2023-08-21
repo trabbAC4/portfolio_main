@@ -350,7 +350,7 @@ h3:nth-child(2) {
 
   /* Contact */ 
 #contact_me {
-    padding-top: 15px;
+    padding-top: 5px;
     color: white;
     background: rgb(13,119,43);
     background: radial-gradient(circle, rgba(13,119,43,1) 0%, rgba(21,106,45,1) 9%, rgba(19,100,110,1) 17%, rgba(17,95,169,1) 27%, rgba(8,20,18,1) 35%);
